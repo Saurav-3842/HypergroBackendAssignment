@@ -11,7 +11,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5000/api", // Change if needed
+        url: `${process.env.BACKEND_URL}/api`, 
       },
     ],
     components: {
