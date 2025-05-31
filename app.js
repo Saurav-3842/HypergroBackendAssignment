@@ -13,7 +13,9 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
-
+app.get("/", (req, res) => {
+  res.send("Welcome to the Property Listing API! Visit /api-docs for documentation.");
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/properties", propertyRoutes);
 app.use("/api/favorites", favouriteRoutes);
