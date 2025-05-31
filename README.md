@@ -25,23 +25,37 @@ A RESTful backend API built with Node.js, Express, and MongoDB to manage propert
 - **Deployment**: Render
 
 ---
+📘 API Docs (Swagger)
+Interactive documentation available at: [View Swagger API Documentation](https://hypergrobackendassignment.onrender.com/api-docs)
+
+---
 
 ##🧪 API Endpoints
 
 🔐 Authentication
+
 POST /auth/register
+
 POST /auth/login
 
 🏠 Properties
+
 GET /properties — Get all properties (supports filters)
+
 GET /properties/:id — Get a single property
+
 POST /properties — Create property (requires auth)
+
 PUT /properties/:id — Update property (requires auth)
+
 DELETE /properties/:id — Delete property (requires auth)
 
 ❤️ Favorites
+
 GET /favorites — Get user’s favorite properties
+
 POST /favorites — Add property to favorites
+
 DELETE /favorites/:propertyId — Remove from favorites
 
 ---
@@ -55,4 +69,12 @@ furnished, city, state
 type, bedrooms, bathrooms, listingType
 isVerified, title
 
-<pre> ```bash . ├── config/ # Swagger, DB, etc. ├── controllers/ # Business logic ├── middleware/ # Auth middleware ├── models/ # Mongoose models ├── routes/ # API routes  ├── app.js # app ├── .env # Environment config ├── server.js # Entry point └── README.md ``` </pre>
+.
+├── config/            # Swagger, DB, etc.
+├── controllers/       # Business logic
+├── middleware/        # Auth middleware
+├── models/            # Mongoose models
+├── routes/            # API routes
+├── .env               # Environment config
+├── server.js          # Entry point
+└── README.md
