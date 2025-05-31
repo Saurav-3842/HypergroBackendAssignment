@@ -62,19 +62,15 @@ DELETE /favorites/:propertyId — Remove from favorites
 
 🔍 Filters Supported
 Query parameters for /properties:
-minPrice, maxPrice
-rating, maxRating
-tags, amenities
-furnished, city, state
-type, bedrooms, bathrooms, listingType
-isVerified, title
 
-.
-├── config/            # Swagger, DB, etc.
-├── controllers/       # Business logic
-├── middleware/        # Auth middleware
-├── models/            # Mongoose models
-├── routes/            # API routes
-├── .env               # Environment config
-├── server.js          # Entry point
-└── README.md
+minPrice, maxPrice
+
+rating, maxRating
+
+tags, amenities
+
+furnished, city, state
+
+type, bedrooms, bathrooms, listingType
+
+isVerified, title
